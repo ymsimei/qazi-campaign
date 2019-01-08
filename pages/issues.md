@@ -1,0 +1,4 @@
+---
+layout: issues
+permalink: /issues/
+---
