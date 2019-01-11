@@ -1,4 +1,4 @@
 ---
 layout: issues
-permalink: /issues/
+permalink: /platform/
 ---

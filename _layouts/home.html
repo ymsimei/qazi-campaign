@@ -4,10 +4,14 @@
   <link rel="stylesheet" href="/styles/main.css"/>
 </head>
 <body>
+  {% include nav.html %}
   <div class="wrap hero">
     <div class="container">
+      <div>
+        <h1 class="question">What if politics<br>were <span id="word">engaging</span>?</h1>
+      </div>
       <div class="form">
-        <h1>Get in touch!</h1>
+        <h1>Get involved.</h1>
         <p>It's that easy.</p>
         <input class="dark" type="text" name="name" placeholder="Name">
         <input type="text" name="email" placeholder="Email">
@@ -29,14 +33,13 @@
       <hr>
       <div class="grid">
         <div>
-          <h2>Nice to meet you.</h2>
+          <h2>It’s time to step up.</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Day by day, it is becoming more and more clear that we have a government that is not currently working in the best interest of the American people. It is time for ordinary people, like you and me, to make our voices heard. We need more diverse candidates to run for office on every level: Local, County, State, and Federal. We need to have communities get together periodically and have discussions about the issues that matter to them and to ensure that those conversations are conveyed to elected officials so that they can best represent the district. We need to ensure that more people are encouraged to become active participants in their communities. The only thing that is stronger than the influence of money in politics is the influence of strong communities standing together and speaking up for the issues that matter to them.This is how we make America work for us.
           </p>
         </div>
         <div>
-          <iframe src="https://www.youtube.com/embed/ztIp4xFD8Qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/U3jpDweunt8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -47,60 +50,36 @@
       <hr>
       <div class="grid">
         <div class="card">
-          <h2>Lorem Ipsum.</h2>
-          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+          <h2>Medicare For All</h2>
+          <p>We need to make sure that all of our neighbors have access to a quality healthcare system.</p>
         </div>
         <div class="card">
-          <h2>Lorem Ipsum.</h2>
-          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+          <h2>Criminal Justice Reform</h2>
+          <p>For too long, our criminal justice system has disproportionately incarcerated African-Americans.</p>
         </div>
         <div class="card">
-          <h2>Lorem Ipsum.</h2>
-          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+          <h2>Mobilizing our Community</h2>
+          <p>Politics these days are becoming more and more divisive.</p>
         </div>
         <div class="card">
-          <h2>Lorem Ipsum.</h2>
-          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+          <h2>Gun Control</h2>
+          <p>I am tired of mourning the loss of so many innocent and incredible people across our nation to gun violence.</p>
         </div>
         <div class="card">
-          <h2>Lorem Ipsum.</h2>
-          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+          <h2>Green New Deal</h2>
+          <p>According to the most recent United States Climate Report, our nation is nearing a point of no return in terms of addressing climate change.</p>
         </div>
         <div class="card">
-          <h2>Lorem Ipsum.</h2>
-          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+          <h2>Income Inequality</h2>
+          <p>We are living in a world in which the rich are getting tax breaks left and right while the common person is paying their fair share but struggling to make a living wage and manage the growing costs of healthcare, housing, education, and more.</p>
         </div>
       </div>
-      <a class="link" href=#>SEE MORE</a>
+      <a class="link" href=/platform/>SEE MORE</a>
     </div>
   </div>
-  <div class="wrap support">
-    <div class="container">
-      <h1 class="white">How can you support?</h1>
-      <hr class="white">
-      <div class="grid">
-        <form>
-          <h2>Volunteer</h2>
-          <p>Leave your name and a way to contact you so we can reach out when we need you.</p>
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email">
-          <input type="text" class="phone" placeholder="Phone">
-          <input type="text" class="zip" placeholder="Zip">
-          <input type="submit" value="SUBMIT">
-        </form>
-        <form>
-          <h2>Donate</h2>
-          <p>Empower our mission with any size contribution. No gift is too small to make a difference!</p>
-          <div class="gifts">
-            <a class="gift" href="#">Give $5</a>
-            <a class="gift" href="#">Give $10</a>
-            <a class="gift" href="#">Give $20</a>
-            <a class="gift" href="#">Give $50</a>
-          </div>
-          <input type="text" class="phone" placeholder="Custom Amount">
-          <input type="submit" class="zip" value="SUBMIT">
-        </form>
-      </div>
-    </div>
-  </div>
+  {% include support.html %}
+  <script src="/scripts/jquery.js" charset="utf-8"></script>
+  <script src="/scripts/nav.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+  <script src="/scripts/words.js" charset="utf-8"></script>
 </body>
