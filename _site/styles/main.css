@@ -115,8 +115,8 @@ hr {
   .question {
     text-align: center; }
 
-  .support .col-md:nth-child(1) {
-    margin-bottom: 50px; } }
+  .support .col-md {
+    margin-bottom: 25px; } }
 nav {
   position: fixed;
   z-index: 2;
