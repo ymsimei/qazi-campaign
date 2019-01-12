@@ -45,6 +45,7 @@ hr
     font-weight: 700
     margin-bottom: 25px
   .wave
+    z-index: 0
     position: absolute
     bottom: 0
     left: 0
@@ -52,24 +53,56 @@ hr
 .donate
   opacity: 0.3
 
-.form
-  background-color: white
+form.volunteer
+  position: relative
   z-index: 1
-  text-align: center
+  background-color: #fff
   border-radius: 15px
   padding: 20px
   box-shadow: 0 15px 25px rgba(0,0,0,0.5)
+  height: 100%
+  transition: 1s
   h1, p
-    font-weight: 700
+    text-align: center
+  h1::after
+    content: "Get involved."
+  p::after
+    content: "Leave your name and a way to contact you so we can reach out when we need you."
   input
     background-color: #f5f5f5
     font-family: $secondary-font
-  .btn
+  .form-group
+    text-align: center
+  .btn[type="submit"]
     width: 100%
     background-color: $accent-color
+    transition: ease-out 200ms
     border: none
     padding: 12px
     font-weight: 700
+    &::after
+      content: "SUBMIT"
+  &.validate .btn[type="submit"]
+    text-align: center
+    width: 48px
+    animation: pulseBG 0.5s infinite alternate
+    &::after
+      content: "..."
+  &.done
+    h1::after
+      content: "Thank you!"
+    p::after
+      content: "We will be in touch for ways you can help."
+    .btn[type="submit"]
+      background-color: green
+      &::after
+        content: "SUCCESS"
+
+@keyframes pulseBG
+  from
+    background-color: rgba(1,102,153, 1)
+  to
+    background-color: rgba(1,102,153, 0.5)
 
 .introduction
   iframe
