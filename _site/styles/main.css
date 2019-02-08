@@ -36,6 +36,7 @@ hr {
   .hero .question {
     color: white;
     font-weight: 700;
+    font-size: 40pt;
     margin-bottom: 25px; }
   .hero .wave {
     z-index: 0;
