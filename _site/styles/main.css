@@ -16,7 +16,7 @@ p {
 hr {
   width: 100px;
   margin: 25px 0 35px 0;
-  border: 3px solid #016699;
+  border: 3px solid #12ADF7;
   border-radius: 5px; }
   hr.center {
     margin: 25px auto 35px auto; }
@@ -27,7 +27,7 @@ hr {
   border: 1px solid rgba(0, 0, 0, 0.075); }
 
 .hero {
-  background-color: #016699;
+  background-color: #12ADF7;
   position: relative;
   overflow: hidden;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='16' height='16' fill-opacity='0.05' fill='%23000000'/%3E%3C/svg%3E");
@@ -64,7 +64,7 @@ form.volunteer {
     text-align: center; }
   form.volunteer .btn[type="submit"] {
     width: 100%;
-    background-color: #016699;
+    background-color: #12ADF7;
     transition: ease-out 200ms;
     border: none;
     padding: 12px;
@@ -111,7 +111,7 @@ form.volunteer {
       background-color: #444; }
 
 .support {
-  background-color: #016699;
+  background-color: #12ADF7;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='16' height='16' fill-opacity='0.05' fill='%23000000'/%3E%3C/svg%3E"); }
   .support form {
     background-color: white;
@@ -127,7 +127,7 @@ form.volunteer {
       font-family: "Open Sans", sans-serif; }
     .support form .btn {
       width: 100%;
-      background-color: #016699;
+      background-color: #12ADF7;
       border: none;
       padding: 12px;
       font-weight: 700; }
@@ -147,15 +147,21 @@ nav {
     justify-content: space-between;
     padding: 0px 10px; }
     nav .container .logo {
-      text-align: left;
-      font-size: 18pt;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      font-family: "Merriweather", sans-serif;
-      padding: 14px 10px; }
-      nav .container .logo img {
-        height: 30px; }
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0px 10px;
+      text-decoration: none; }
+      nav .container .logo svg {
+        height: 45px;
+        width: auto;
+        margin-right: 10px; }
+      nav .container .logo h1 {
+        color: #fff;
+        font-size: 22px;
+        line-height: 24px;
+        margin: 0; }
     nav .container .links {
       padding-right: 10px; }
       nav .container .links a {
@@ -175,12 +181,15 @@ nav {
   nav.opaque {
     background-color: white;
     box-shadow: 0 14px 26px rgba(0, 0, 0, 0.075); }
-    nav.opaque .logo, nav.opaque .links a {
-      color: #000;
-      border-color: #016699 !important; }
+    nav.opaque .logo h1, nav.opaque .links a {
+      color: #000; }
+    nav.opaque .links a.active {
+      border-bottom: 5px solid #12ADF7; }
+    nav.opaque .logo .letter-a {
+      fill: #12ADF7; }
 
 .header {
-  background-color: #016699;
+  background-color: #12ADF7;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='16' height='16' fill-opacity='0.05' fill='%23000000'/%3E%3C/svg%3E");
   padding-top: 150px; }
 
