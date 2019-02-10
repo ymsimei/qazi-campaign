@@ -28,3 +28,15 @@ $("form button[type='submit']").on("click", function(e) {
     },
   });
 })
+
+function updateDonation() {
+  let btn = document.querySelector(".donation-btn")
+  let input = document.querySelector(".donation-input")
+  if (input.value) {
+    let href = "https://secure.actblue.com/donate/voteqazi?amount=" + input.value
+    btn.href = href
+  } else {
+    let href= "https://secure.actblue.com/donate/voteqazi"
+    btn.href = href
+  }
+}
