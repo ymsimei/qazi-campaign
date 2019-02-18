@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth; }
+
 .wrap {
   padding: 50px 10px; }
 
@@ -27,21 +30,32 @@ hr {
   border: 1px solid rgba(0, 0, 0, 0.075); }
 
 .hero {
-  background-color: #12ADF7;
   position: relative;
   overflow: hidden;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='16' height='16' fill-opacity='0.05' fill='%23000000'/%3E%3C/svg%3E");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/hero.jpg");
+  background-size: cover;
   padding-top: 200px;
-  padding-bottom: 150px; }
+  padding-bottom: 250px; }
   .hero .question {
     color: white;
     font-weight: 700;
-    font-size: 40pt;
-    margin-bottom: 25px; }
+    font-size: 40pt; }
+  .hero p {
+    color: #fff;
+    font-size: 20pt; }
+  .hero .btn {
+    width: 100%;
+    background-color: #12ADF7;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1; }
   .hero .wave {
     z-index: 0;
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     left: 0; }
 
 form.volunteer {
@@ -118,17 +132,17 @@ form.volunteer {
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); }
-    .support form h1, .support form p {
-      font-weight: 700; }
-    .support form input {
-      background-color: #f5f5f5;
-      font-family: "Open Sans", sans-serif; }
     .support form .btn {
       width: 100%;
       background-color: #12ADF7;
       border: none;
       padding: 12px;
       font-weight: 700; }
+    .support form h1, .support form p {
+      font-weight: 700; }
+    .support form input {
+      background-color: #f5f5f5;
+      font-family: "Open Sans", sans-serif; }
     .support form .input-group-text {
       border: none; }
 
