@@ -56,6 +56,9 @@ hr {
     font-weight: 700;
     position: relative;
     z-index: 1; }
+    .hero .btn.vol {
+      background-color: #fff;
+      color: #12ADF7; }
   .hero .wave {
     z-index: 0;
     position: absolute;
