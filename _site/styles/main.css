@@ -4,10 +4,14 @@
 .wrap {
   padding: 50px 10px; }
 
+.center {
+  text-align: center; }
+
 h1, h2, h3 {
   font-family: "Merriweather", sans-serif;
   font-weight: 700;
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 25px; }
   h1.center, h2.center, h3.center {
     text-align: center; }
   h1.white, h2.white, h3.white {
@@ -139,7 +143,8 @@ form.volunteer {
       padding: 12px;
       font-weight: 700; }
     .support form h1, .support form p {
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 20px; }
     .support form input {
       background-color: #f5f5f5;
       font-family: "Open Sans", sans-serif; }
@@ -195,7 +200,7 @@ nav {
     box-shadow: 0 14px 26px rgba(0, 0, 0, 0.075); }
     nav.opaque .logo h1, nav.opaque .links a {
       color: #000; }
-    nav.opaque .links a.active {
+    nav.opaque .links a.active, nav.opaque .links a:hover {
       border-bottom: 5px solid #12ADF7; }
     nav.opaque .logo .letter-a {
       fill: #12ADF7; }
@@ -205,8 +210,15 @@ nav {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='16' height='16' fill-opacity='0.05' fill='%23000000'/%3E%3C/svg%3E");
   padding-top: 150px; }
 
-.platforms .platform:nth-child(2n) {
+.platforms .platform:nth-child(2n), .abouts .about:nth-child(2n) {
   background-color: #f5f5f5; }
+
+.about img {
+  width: 100%; }
+
+.about .quote {
+  text-align: center;
+  margin-top: 20px; }
 
 @media only screen and (max-width: 767px) {
   .hero {
