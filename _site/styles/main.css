@@ -8,6 +8,9 @@
 .center {
   text-align: center; }
 
+.blue {
+  color: #12ADF7; }
+
 h1, h2, h3 {
   font-family: "Merriweather", sans-serif;
   font-weight: 700;
