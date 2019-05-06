@@ -1,3 +1,5 @@
 # Build settings
 markdown: kramdown
 permalink: /:title
+plugins:
+  - jekyll-redirect-from
